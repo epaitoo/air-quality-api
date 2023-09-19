@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AirQuality {
+  id          Int       @id @default(autoincrement())
+  ts          DateTime  @db.Timestamp(6)
+  aqius       Int
+  mainus      String
+  aqicn       Int
+  maincn      String
+}
