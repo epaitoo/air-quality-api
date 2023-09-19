@@ -26,9 +26,6 @@ Please ensure you have met the following requirements:
 ### Installation
 - Click on the 'Clone or download' button and select 'Download Zip.'
 - Move to the project directory:
-```bash
-$ cd air-quality-api
-```
 - Install dependencies:
 ```bash
 $ npm install
